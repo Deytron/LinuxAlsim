@@ -1,9 +1,8 @@
 # Script pour l'éval je suis trop chaud
 
-tmpdossier="$TMPDIR/in"
 # Boucle pour récupérer les fichiers dans tmp/in
 
 
-for tmpdossier in "$searchdir"/*; do
+for entry in "$TMPDIR/in"; do
 echo "$tmpdossier"
 done
