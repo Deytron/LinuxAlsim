@@ -2,7 +2,10 @@
 
 # Boucle pour récupérer les fichiers dans tmp/in
 
+tmpdossierin="/tmp/in"
+tmpdossierout="/tmp/out"
 
-for entry in "$TMPDIR/in"; do
-echo "$tmpdossier"
-done
+gzip -r $tmpdossierin
+mv $tmpdossierin $tmpdossierout
+
+
